@@ -1,0 +1,27 @@
+stackbitVersion: "~0.3.0"
+ssgName: "custom"
+buildCommand: "npx @11ty/eleventy"
+publishDir: "public"
+staticDir: "static"
+uploadDir: "images"
+pagesDir: "site"
+metadata:
+  title: "leyoutagency "
+  description: "Theme created in Webflow and converted with Udesly"
+models:
+  posts:
+    type: "page"
+    label: "Posts"
+    urlPath: "/posts/{slug}"
+  files:
+    type: "page"
+    label: "Files"
+    urlPath: "/files/{slug}"
+  tag:
+    type: "page"
+    label: "Tags"
+    urlPath: "/tags/{slug}"
+  team:
+    type: "page"
+    label: "Teams"
+    urlPath: "/team/{slug}"
